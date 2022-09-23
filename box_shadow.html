@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 22px;
+            border: 2px solid red;
+            background-color: burlywood;
+            /* box-shadow: 10px 13px green; */
+            box-shadow: -10px -13px 10px green;
+        }
+        .card h2{
+            text-shadow: 2px 3px green;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card1">
+        <h2>this is c++ course</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea recusandae est numquam sapiente? Voluptatibus, eos perferendis? Quisquam maiores qui dolore, consequuntur expedita vel, fugit voluptatem nam sapiente excepturi magnam veritatis?</p>
+      </div>
+      <div class="card" id="card2">
+        <h2>this is html course</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam minima recusandae itaque distinctio nemo cumque, totam veritatis optio aut consequatur modi odio voluptatem ullam in aliquam ab. Eligendi, minima dolor.</p>
+      </div>
+      <div class="card" id="card3">
+        <h2>Engg.Farman Ali Gorayyah</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, itaque sit molestias, cupiditate esse voluptas similique, quo temporibus tempore quasi ad ullam expedita architecto odio nulla laborum qui? Pariatur, quam.</p>
+      </div>
+    </div>
+  </body>
+</html>

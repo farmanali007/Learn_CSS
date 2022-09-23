@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oder property in css grid</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      h1 {
+        color: aliceblue;
+      }
+      .container {
+        background-color: lightgray;
+        width: 1000px;
+        height: 1000px;
+        margin: 40px auto 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 300px);
+        grid-gap: 15px;
+      }
+      .itmes1 {
+        background-color: antiquewhite;
+      }
+      .itmes2 {
+        background-color: palevioletred;
+      }
+      .itmes3 {
+        background-color: yellow;
+      }
+      .itmes4 {
+        background-color: greenyellow;
+      }
+      .itmes5 {
+        background-color: red;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+      }
+      .itmes5 > div {
+        background-color: aliceblue;
+        margin: 10px 10px 10px 10px;
+      }
+      .itmes6 {
+        background-color: blue;
+      }
+      .subitmes3{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-gap: 5px;
+      }
+      .subitmes3 > div{
+          background-color: pink;
+          margin:3px 3px 3px 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>Engr.Farman Ali Gorayyah</strong>
+      <br /><br />
+      Nessted Grid property
+    </h1>
+    <div class="container">
+      <div class="itmes1">One</div>
+      <div class="itmes2">tow</div>
+      <div class="itmes3">three</div>
+      <div class="itmes4">four</div>
+      <div class="itmes5">
+        <div class="subitmes1">A</div>
+        <div class="subitmes2">B</div>
+        <div class="subitmes3">
+          <div class="ssubitmes1">a</div>
+          <div class="ssubitmes2">b</div>
+          <div class="ssubitmes3">c</div>
+          <div class="ssubitmes3">d</div>
+        </div>
+        <div class="subitmes3">D</div>
+      </div>
+      <div class="itmes6">six</div>
+    </div>
+  </body>
+</html>

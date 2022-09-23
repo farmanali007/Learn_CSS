@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Gap</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            padding: 50px 0 0 50px;
+        }
+        .container{
+            background: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 100px 100px 100px;
+            /* grid-row-gap: 30px;
+            grid-column-gap: 20px; */
+            grid-gap: 30px 30px;
+        }
+        .item1{
+            background-color: aqua;
+        }
+        .item2{
+            background-color: yellow;
+        }
+        .item3{
+            background-color:red;
+        }
+        .item4{
+            background-color:green;
+        }
+        .item5{
+            background-color: brown;
+        }
+        .item6{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engg.Farman Ali Gorayyah <br>Grid-gap</h1>
+    <div class="container">
+        <div class="item1">first</div>
+        <div class="item2">second</div>
+        <div class="item3">third</div>
+        <div class="item4">fourth</div>
+        <div class="item5">fifth</div>
+        <div class="item6">sixth</div>
+    </div>
+   
+</body>
+</html>

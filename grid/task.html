@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template making Task</title>
+</head>
+<style>
+    body{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1{
+        margin: 50px 0 0 100px ;
+        /* margin: 50px auto 0; */
+    }
+    .container{
+        border: 2px solid red;
+        background-color:lightgray;
+        width: 700px;
+        /* height: 700px; */
+        margin: 50px auto 0;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,70px);
+        grid-gap: 20px;
+        grid-auto-rows: 70px;
+    }
+    .container >div{
+        margin: 3px ;
+    }
+    .Header{
+        background-color: #404040;
+        grid-column: 1 / span3;
+    }
+    .Article{
+        background-color:#404040;
+        grid-column: 1 /span 2;
+        grid-row: 2 / span 2;
+    }
+    .Text1{
+        background-color: #404040;
+        grid-column: 3 / span-1;
+    }
+    .Text2{
+        background-color: #404040;
+        grid-column: 3 / span-1;
+       
+    }
+    .Content{
+        background-color: #404040;
+        grid-column: 1 /span3;
+        grid-row: 4 /span 2;
+    }
+    .Footer{
+        background-color: #404040;
+        grid-column: 1 /span3;
+    }
+
+</style>
+<body>
+    <h1>
+        <strong>Engr.Farman Ali Gorayyah</strong>
+        <br>
+        Grid template Making Task
+    </h1>
+    <div class="container">
+        <div class="Header">Header</div>
+        <div class="Article">Article</div>
+        <div class="Text1">Text</div>
+        <div class="Text2">Text</div>
+        <div class="Content">Main Content</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>

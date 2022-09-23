@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex:shrink</title>
+    <style>
+      .header {
+        background-color: black;
+        color: aliceblue;
+        font-family: "Courier New", Courier, monospace;
+        padding: 10px auto 0;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .container {
+        border: 2px solid red;
+        background-color: #eee;
+        /* width: 400px; */
+        /* padding: 10px; */
+        margin: 50px auto 0;
+
+        display: flex;
+      }
+      .box {
+        text-align: center;
+           width: 200px;
+           height: 60px;
+        /* padding: 10px; */
+      }
+      .box1 {
+        flex-shrink: 1;
+          /* flex-shrink: 0; */
+        
+        background-color: #404040;
+      }
+      .box2 {
+    
+        background-color: #db2424;
+      }
+      .box3 {
+        background-color: #4ca518;
+      }
+      .box4 {
+        background-color: #af85e6;
+      }
+      .box5 {
+        background-color: #7283e4;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="header">
+      <h1>Engr.Farman Ali Gorayah</h1>
+      <h2>css flex:shrink</h2>
+    </div> -->
+    <div class="container">
+      <div class="box box1">one</div>
+      <div class="box box2">two</div>
+      <div class="box box3">three</div>
+      <div class="box box4">four</div>
+      <div class="box box5">five</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+border: 2
+    px
+     solid white;
+        margin-top: 132
+    px
+    ;
+        width: 33%;
+        padding: 47px -18px;
+        border-radius: 10
+    px
+    ;
+        margin-left: 174
+    px
+    ;
+        margin-top: 149
+    px
+    ;

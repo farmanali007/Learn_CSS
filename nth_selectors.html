@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute and nth child pseudo selectors</title>
+  </head>
+  <style>
+    input[type=text]{
+        padding: 34px;
+        border: 2px solid red;
+    }
+           .container{
+               display: block;
+               width: 233px;
+               margin:30px auto;
+           }
+           a[target]{
+               color: rgb(187, 14, 43);
+               font-size: 44px;
+           }
+           a[target=_self]{
+               font-size: 20px;
+               color: blue;
+           -}
+           /* ul :nth-child(2n+0){
+               color: cyan;
+           } */
+           ul :nth-child(odd){
+               background-color: yellow;
+           }
+           ul :nth-child(even){
+               background-color: pink;
+           }
+  </style>
+  <body>
+    <div class="container">
+      <h1><a href="http://google.com" target="_blank">go to google</a></h1>
+      <h1>
+        <a href="http://facebook.come" target="_self">go to facebook.come</a>
+      </h1>
+      <form action="" class="form_control"></form>
+      <input type="text" placeholder="Enter your name" />
+      <input type="password" placeholder="Enter your password" />
+      <input type="submit" value="submit" />
+
+      <ul>
+        <li class="item" id="item-1">these are itmes inside li</li>
+        <li class="item" id="item-2">these are itmes inside li</li>
+        <li class="item" id="item-3">these are itmes inside li</li>
+        <li class="item" id="item-4">these are itmes inside li</li>
+        <li class="item" id="item-5">these are itmes inside li</li>
+        <li class="item" id="item-6">these are itmes inside li</li>
+        <li class="item" id="item-7">these are itmes inside li</li>
+        <li class="item" id="item-8">these are itmes inside li</li>
+        <li class="item" id="item-9">these are itmes inside li</li>
+        <li class="item" id="item-10">these are itmes inside li</li>
+      </ul>
+    </div>
+  </body>
+</html>

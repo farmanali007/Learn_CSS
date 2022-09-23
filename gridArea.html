@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridArea</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 'navbar navbar navbar navbar'
+            'section section section aside'
+            'foooter foooter foooter foooter';
+        }
+        .item{
+            background-color: aqua;
+            border:3px solid black;
+        }
+        #navbar{
+                 grid-area: navbar ;
+        }
+        #section{
+            grid-area: section ;
+        }
+        #aside{
+           grid-area: aside;
+        }
+        #fot{
+            grid-area: foooter;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+            <div class="item" id="navbar">
+                home about contac us 
+            </div>    
+                <div class="item" id="section">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quae explicabo tenetur maxime laudantium pariatur eaque rerum consequatur dolore, quidem mollitia odio sequi vero illo aut eligendi ut perspiciatis odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, dolor? Debitis veritatis, earum voluptatibus magni quasi perferendis vero incidunt magnam sapiente et labore esse tempore quidem, corrupti tempora reprehenderit amet accusamus dolor aperiam officiis. Architecto incidunt dicta mollitia earum, itaque molestiae possimus sequi eveniet tempora quas consequuntur. Soluta rem perferendis voluptatem, incidunt numquam necessitatibus quos voluptate omnis fugiat vel placeat quibusdam temporibus minus architecto inventore nulla ab odio corporis. A, delectus ut. Nihil dolore asperiores ducimus tempore! Dolorum, magnam eveniet possimus temporibus quia consequuntur in reprehenderit provident commodi, natus aperiam deserunt non. Omnis voluptates ad ipsum perferendis, dolor optio, a sequi ut non minima amet. Est sapiente dicta beatae nobis voluptas, architecto dignissimos cumque tenetur maiores minus. Libero, autem. Doloremque amet minus voluptatum commodi blanditiis non consequatur iure reprehenderit veritatis voluptate voluptatibus enim officiis ducimus mollitia cumque, repudiandae voluptatem. At sed officia vero animi repudiandae maxime, obcaecati asperiores fuga incidunt harum ad molestiae laborum explicabo natus ut magni necessitatibus error dignissimos eius quia ex optio quaerat tempore saepe! Porro, dolorum fugiat modi odio debitis dolore totam architecto eos incidunt molestiae omnis quaerat, earum voluptatum quae perspiciatis eaque eum. Molestiae, aliquam harum. Facilis, vel iure! Vel quaerat architecto nesciunt libero ipsam corrupti corporis eligendi aspernatur. Laborum, adipisci. Molestiae culpa maxime, eaque eos accusamus blanditiis nemo deleniti ut at praesentium animi alias nostrum suscipit incidunt doloribus nulla doloremque aliquid tempore numquam voluptas, quas inventore dolorem. Quaerat autem odio dignissimos aliquid quam delectus nisi recusandae possimus. Dignissimos asperiores nulla architecto voluptatem provident, quia error unde delectus, repudiandae neque illum quas quis deserunt vero velit beatae. Cum atque culpa, obcaecati adipisci explicabo eveniet, reiciendis eligendi id beatae praesentium totam harum placeat? Nostrum veniam similique repellat cumque fuga quisquam sapiente vitae consequuntur esse repudiandae? Eligendi quia molestias fugiat totam, unde ab perspiciatis vel aspernatur corporis sequi, placeat optio minima! Cupiditate inventore perferendis rerum dolorem tenetur consequuntur sed, dolores saepe ducimus quod dolore distinctio esse ut fugit nam ipsum rem vero commodi accusamus numquam aspernatur earum reiciendis cum eveniet. Quod sit commodi ipsum numquam cupiditate dolorum eos dolores explicabo officia omnis iste sequi, ea error nesciunt quia, nobis corrupti illo quibusdam, deleniti quos cum suscipit alias sunt. Reprehenderit maiores dignissimos dolorum rem odio porro sed consequuntur obcaecati dolor quo at id, suscipit deleniti numquam mollitia quod? Eum cupiditate, quod est distinctio exercitationem eligendi, hic ut dicta, qui porro officia veniam sint. Ullam esse cupiditate explicabo illo.</div>
+                <div class="item" id="asid"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum illum voluptatem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque delectus quibusdam quas quidem officiis molestias explicabo autem, quam, et velit accusantium consectetur sit consequuntur cum ipsum. Vel, sequi quae vitae autem debitis rerum ipsa tempore odio itaque eos, pariatur a blanditiis facilis vero aspernatur numquam quibusdam sapiente totam sunt voluptate fugit quasi rem nostrum? Aspernatur quidem obcaecati eligendi praesentium neque quia voluptatum, dolorum nulla nisi sunt ex esse. Labore, reiciendis, odit inventore quod odio possimus voluptatum esse nostrum eum eligendi iste veritatis, ea in asperiores dignissimos ipsa facilis aspernatur dolor ducimus quos laborum nam rem. Sequi inventore aliquam error quibusdam minus magnam, optio fuga earum corporis iusto, repellat omnis repellendus voluptas eum ipsum veniam hic, aspernatur itaque eligendi sed sunt cupiditate rerum? Adipisci similique, molestiae deleniti quo eius laboriosam autem qui quas perferendis tempore aliquid optio consequuntur earum cum inventore voluptate odit blanditiis, odio itaque dolores pariatur hic accusantium. Odio necessitatibus eos quaerat reiciendis eius doloribus corporis, modi corrupti molestiae vero voluptatum ea laudantium quidem iste aliquid ad deserunt error assumenda magni! Enim fugit aliquid corporis nam beatae dolor error unde quos velit aut nemo mollitia hic magnam voluptates officiis quae tenetur cum alias, excepturi architecto harum distinctio provident labore! </div>
+           <foooter class="item" id="fot">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt culpa alias doloremque ab similique sit fugiat beatae, iste nemo facilis cum officiis mollitia maxime odio! Eaque, sapiente! Dolorum, vitae deserunt.
+           </foooter>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="box">Engg.Farman Ali GOrayyah1</div>
+        <div class="box">Engg.Farman Ali GOrayyah2</div>
+        <div class="box">Engg.Farman Ali GOrayyah3</div>
+        <div class="box">Engg.Farman Ali GOrayyah4</div>
+        <div class="box">Engg.Farman Ali GOrayyah5</div>
+        <div class="box">Engg.Farman Ali GOrayyah6</div>
+        <div class="box">Engg.Farman Ali GOrayyah7</div>
+        <div class="box">Engg.Farman Ali GOrayyah8</div>
+        <div class="box">Engg.Farman Ali GOrayyah9</div>
+        <div class="box">Engg.Farman Ali GOrayyah10</div>
+        <div class="box">Engg.Farman Ali GOrayyah10</div>
+        <div class="box">Engg.Farman Ali GOrayyah10</div>
+        <div class="box">Engg.Farman Ali GOrayyah10</div>
+        <div class="box">Engg.Farman Ali GOrayyah10</div> --> 
+    </div>
+</body>
+</html>

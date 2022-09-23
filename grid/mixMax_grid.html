@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinMax function in grid</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container{
+            background-color:#eee;
+            width: 700px;
+            margin: 100px 0 0 50px;
+
+            display: grid;
+            grid-template-columns:max-content 1fr 1fr min-content;
+            grid-template-rows: repeat(2,MinMax(150px min-content));
+            grid-gap: 5px;
+        }
+        .box1{
+            background-color: aquamarine;
+        }
+        .box2{
+            background-color: red;
+        }
+        .box3{
+            background-color: brown;
+        }
+        .box4{
+            background-color:orangered;
+        }
+        .box5{
+            background-color: pink;
+        }
+        .box6{
+            background-color: yellow;
+        }
+        .box7{
+            background-color:greenyellow;
+        }
+        .box8{
+            background-color:bisque;
+        }
+    </style>
+</head>
+<body>
+   <h1> Engr.Farman Ali Gorayyah
+       <br>MimMax Functoin </h1>
+    <div class="container">
+        <div class="box1">one Lorem ipsum dolor sit amet.</div>
+        <div class="box2">tow</div>
+        <div class="box3">three</div>
+        <div class="box4">four Lorem ipsum dolor sit amet consectetur adipisicing elit.-
+        </div>
+        <div class="box5">five</div>
+        <div class="box6">six Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad accusantium repellendus sed delectus aspernatur laboriosam aliquid corrupti exercitationem commodi nobis quo nam sit labore, minus reiciendis. Numquam, blanditiis ipsa!</div>
+        <div class="box7">seven</div>
+        <div class="box8">eight</div>
+    </div>
+</body>
+</html>

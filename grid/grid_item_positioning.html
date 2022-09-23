@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid item positioning</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            padding: 50px 0 0 50px;
+        }
+        .container{
+            background: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 150px 150px;
+            grid-gap: 20px;
+        }
+        .item1{
+            background-color: aqua;
+            /* for grid item positioning we can use following 3 properties */
+
+            /* #firs property */
+
+
+            /* grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4; */
+
+
+            /* second property */
+
+            /* grid-row: 2/3;
+            grid-column: 3/4; */
+
+            /* third property */
+
+            grid-area: 2/3/3/4;
+        }
+        .item2{
+            background-color: yellow;
+        }
+        .item3{
+            background-color:red;
+        }
+        .item4{
+            background-color:green;
+        }
+        .item5{
+            background-color: brown;
+        }
+        .item6{
+            background-color: pink;
+
+            /* #firs property */
+
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2; */
+
+            /* second property */
+
+
+            /* grid-row: 1/2;
+            grid-column: 1/2; */
+
+            
+            /* third property */
+
+
+            grid-area: 1/1/2/2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Engr.Farman Ali Gorayyah <br>Grid items positioning</h1>
+    <div class="container">
+        <div class="item1">first</div>
+        <div class="item2">second</div>
+        <div class="item3">third</div>
+        <div class="item4">fourth</div>
+        <div class="item5">fifth</div>
+        <div class="item6">sixth</div>
+    </div>
+   
+</body>
+</html>

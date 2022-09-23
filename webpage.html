@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Paaji+2&family=Fira+Sans&family=Lobster&family=Murecho:wght@100;200&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+               background: url(img/food3.jpg);
+            color: white;
+        }
+        header::before{
+            background: url(img/food3.jpg) no-repeat center center/cover;
+            content:"";
+            position:absolute;
+            top:0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+              opacity:0;
+        }
+        section{
+            height: 344px;
+            margin: 3px 233px;
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             /* border: 3px solid red; */
+             justify-content: center;
+
+        }
+        /* section::before{
+            content: "this is a content"
+        } */
+        .navigation{
+            display: flex;
+        }
+        li{
+            list-style: none;
+             padding: 34px 43px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+        .navbar{
+            font-family: 'Permanent Marker', cursive;
+        }
+        li:hover{
+            color: orangered;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="navbar">Home</li>
+          <li class="navbar">About</li>
+          <li class="navbar">Services</li>
+          <li class="navbar">Contact  Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+        <h1>WellCome to Coding World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur fuga necessitatibus iste deleniti aliquam excepturi repudiandae! Architecto, quidem laboriosam minima voluptatem, assumenda dolorum possimus esse aut ipsam, qui atque!</p>
+    </section>
+    <hr>
+  </body>
+</html>

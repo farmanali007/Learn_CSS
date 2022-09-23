@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align_self</title>
+    <style>
+        .header{
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 10px auto 0;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .container{
+            border: 2px solid red;
+            background-color: #eee;
+            width: 800px;
+            height: 200px;
+            
+            padding: 10px;
+            margin: 50px auto 0;
+
+
+            display: flex;
+            justify-content:center ;
+             /* parent adusted property */
+             align-items: center;
+
+          
+     }
+        .box1{
+            background-color: #404040;
+            text-align: center;
+            align-self: stretch;
+        }
+        .box2{
+            background-color: #db2424;
+            text-align: center;
+            /* aling-self(auto ) property work as same as parent container adjusted property */
+            align-self: auto; 
+        }
+        .box3{
+            align-self: flex-end;
+            text-align: center;
+            background-color: #4ca518;
+        }
+        .box4{
+             text-align: center;
+            background-color: #af85e6;
+        }
+        .box5{
+             text-align: center;
+            background-color: #7283e4;
+        }
+        .box6{
+             text-align: center;
+            background-color: #c934d6;
+        }
+        .box7{
+             text-align: center;
+            background-color: #e4d7d7;
+        }
+        .box8{
+             text-align: center;
+            background-color: #c6d310;
+        }
+        .container >div{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <h1>Engr.Farman Ali Gorayah</h1> 
+        <h2> css flex:Align_self(this property is only use for individual items)</div>
+
+    </div>
+    <div class="container">
+        <div class="box1">one</div>
+        <div class="box2">two</div>
+        <div class="box3">three</div>
+        <div class="box4">four</div>
+        <div class="box5">five</div>
+        <div class="box6">six</div>
+        <div class="box7">seven</div>
+        <div class="box8">Eight</div>
+    </div>
+</body>
+</html>
